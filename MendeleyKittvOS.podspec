@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "MendeleyKittvOS"
+  s.name = "MendeleyKitiOS"
   s.version = "2.0.0"
   s.summary      = "The Mendeley Objective C client SDK."
 
