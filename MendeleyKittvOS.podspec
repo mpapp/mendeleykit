@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "MendeleyKitiOS"
+  s.name = "MendeleyKittvOS"
   s.version = "2.0.0"
   s.summary      = "The Mendeley Objective C client SDK."
 
@@ -19,7 +19,7 @@ DESC
   s.authors      = { "Mendeley iOS" => "ios@mendeley.com"}
   s.requires_arc  = true
   s.source       = { :git => "https://github.com/Mendeley/mendeleykit.git", :tag => "2.0.0" }
-  s.module_name = "MendeleyKitiOS"
+  s.module_name = "MendeleyKittvOS"
   s.tvos.deployment_target = '9.0'
   s.source_files  = "MendeleyKit/MendeleyKitiOS/MendeleyKitiOS.h", "MendeleyKit/MendeleyKit/*.h", "MendeleyKit/MendeleyKit/**/*.{h,m,swift}"
 end
