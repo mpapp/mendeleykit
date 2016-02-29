@@ -150,6 +150,12 @@ typedef void (^ __nullable MendeleyStringArrayCompletionBlock)(NSArray * __nulla
 #define kMendeleyRESTHTTPLinkFirst                              @"first"
 #define kMendeleyRESTHTTPLinkLast                               @"last"
 #define kMendeleyRESTHTTPTotalCount                             @"Mendeley-Count"
+#define kMendeleyRESTRequestDevelopmentToken                    @"Development-Token"
+
+/***********************************************
+ @name Request keys API v2
+ ***********************************************/
+#define kMendeleyRESTRequestJSONLocationType                    @"application/vnd.mendeley-location.json"
 
 /***********************************************
    @name Request values
@@ -195,6 +201,7 @@ typedef void (^ __nullable MendeleyStringArrayCompletionBlock)(NSArray * __nulla
 #define kMendeleyRESTAPIFollowers                         @"followers"
 #define kMendeleyRESTAPIFollowersWithID                   @"followers/%@"
 #define kMendeleyRESTAPIApplicationFeatures               @"application_features"
+#define kMendeleyRESTAPILocations                         @"locations/v2"
 
 /***********************************************
    @name REST API Query Parameters
@@ -260,6 +267,7 @@ typedef void (^ __nullable MendeleyStringArrayCompletionBlock)(NSArray * __nulla
 #define kMendeleyModelReaderCountByCountry                @"NSDictionary"
 #define kMendeleyModelReaderCountByDiscipline             @"NSDictionary"
 #define kMendeleyModelReaderCountByAcademicStatus         @"NSDictionary"
+#define kMendeleyModelLocation                            @"MendeleyLocation"
 
 /***********************************************
    @name JSON keys General
