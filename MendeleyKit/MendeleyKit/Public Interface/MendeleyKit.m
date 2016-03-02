@@ -2348,7 +2348,7 @@
  @param completionBlock
  */
 #warning this is a v2 API BETA method - DO NOT USE IN PRODUCTION
-- (MendeleyTask *)locationsWithQueryParameters:(MendeleyDocumentParameters *)queryParameters
+- (MendeleyTask *)locationsWithQueryParameters:(MendeleyLocationParameters *)queryParameters
                               developmentToken:(NSString *)developmentToken
                                completionBlock:(MendeleyArrayCompletionBlock)completionBlock
 {

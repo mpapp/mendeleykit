@@ -267,3 +267,6 @@
 
 @implementation MendeleyFollowersParameters
 @end
+
+@implementation MendeleyLocationParameters
+@end
