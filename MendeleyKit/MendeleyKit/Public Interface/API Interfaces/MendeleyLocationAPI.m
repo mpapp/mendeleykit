@@ -91,6 +91,7 @@
                      completionBlock:(MendeleyArrayCompletionBlock)completionBlock
 {
     NSDictionary *query = [queryParameters valueStringDictionary];
+    NSDictionary *mergedQuery = [NSDictionary dictionaryByMerging:query with:[[MendeleyQueryRequestParameters alloc] valueStringDictionary]];
     NSMutableDictionary *header = [NSMutableDictionary dictionaryWithDictionary:[self defaultServiceRequestHeaders]];
     if (nil != developmentToken)
     {
@@ -99,7 +100,7 @@
     
     [self.helper mendeleyObjectListOfType:kMendeleyModelLocation
                                       api:kMendeleyRESTAPILocations
-                               parameters:query
+                               parameters:mergedQuery
                         additionalHeaders:header
                                      task:task
                           completionBlock:completionBlock];
