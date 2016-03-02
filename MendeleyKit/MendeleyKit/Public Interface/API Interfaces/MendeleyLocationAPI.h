@@ -8,6 +8,8 @@
 
 #import "MendeleyObjectAPI.h"
 
+@class MendeleyLocationParameters;
+
 @interface MendeleyLocationAPI : MendeleyObjectAPI
 /**
  @name MendeleyLocationAPI v2 API model

@@ -11,6 +11,7 @@
 #import "MendeleyKitConfiguration.h"
 #import "NSDictionary+Merge.h"
 #import "NSError+Exceptions.h"
+#import "MendeleyQueryRequestParameters.h"
 
 @implementation MendeleyLocationAPI
 - (NSDictionary *)defaultServiceRequestHeaders
