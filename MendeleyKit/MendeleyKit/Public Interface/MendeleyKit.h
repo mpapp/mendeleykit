@@ -908,4 +908,34 @@
  */
 - (void)cancelAllTasks:(MendeleyCompletionBlock)completionBlock;
 
+/**
+ @name Version 2 API methods in beta
+ Do NOT use any of these methods in public/production software
+ */
+
+/**
+ This method is only used when paging through a list of locations on the server.
+ All required parameters are provided in the linkURL, which should not be modified
+ 
+ @param linkURL the full HTTP link to the locations listings page
+ @param task
+ @param completionBlock
+ */
+#warning this is a v2 API BETA method - DO NOT USE IN PRODUCTION
+- (MendeleyTask *)locationsWithLinkedURL:(NSURL *)linkURL
+                        developmentToken:(NSString *)developmentToken
+                         completionBlock:(MendeleyArrayCompletionBlock)completionBlock;
+
+/**
+ obtains a list of locations for the first page.
+ @param parameters the parameter set to be used in the request
+ @param task
+ @param completionBlock
+ */
+#warning this is a v2 API BETA method - DO NOT USE IN PRODUCTION
+- (MendeleyTask *)locationsWithQueryParameters:(MendeleyDocumentParameters *)queryParameters
+                              developmentToken:(NSString *)developmentToken
+                               completionBlock:(MendeleyArrayCompletionBlock)completionBlock;
+
+
 @end

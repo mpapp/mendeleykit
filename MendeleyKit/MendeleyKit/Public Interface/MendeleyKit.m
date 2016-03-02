@@ -41,6 +41,7 @@
 #import "MendeleyDisciplinesAPI.h"
 #import "MendeleyFollowersAPI.h"
 #import "MendeleyApplicationFeaturesAPI.h"
+#import "MendeleyLocationAPI.h"
 #import "MendeleyErrorManager.h"
 
 
@@ -60,6 +61,7 @@
 @property (nonatomic, strong, nonnull) MendeleyAcademicStatusesAPI *academicStatusesAPI;
 @property (nonatomic, strong, nonnull) MendeleyFollowersAPI *followersAPI;
 @property (nonatomic, strong, nonnull) MendeleyApplicationFeaturesAPI *featuresAPI;
+@property (nonatomic, strong, nonnull) MendeleyLocationAPI *locationAPI;
 @end
 
 @implementation MendeleyKit
@@ -145,6 +147,11 @@
                                          baseURL:baseURL];
     
     self.featuresAPI = [[MendeleyApplicationFeaturesAPI alloc]
+                        initWithNetworkProvider:self.networkProvider
+                        baseURL:baseURL];
+ 
+    ///v2 APIs
+    self.locationAPI = [[MendeleyLocationAPI alloc]
                         initWithNetworkProvider:self.networkProvider
                         baseURL:baseURL];
 
@@ -2301,6 +2308,74 @@
 - (void)cancelAllTasks:(MendeleyCompletionBlock)completionBlock
 {
     [self.networkProvider cancelAllTasks:completionBlock];
+}
+
+#pragma mark - Version 2 API beta methods.
+#warning this is a v2 API BETA method - DO NOT USE IN PRODUCTION
+- (MendeleyTask *)locationsWithLinkedURL:(NSURL *)linkURL
+                        developmentToken:(NSString *)developmentToken
+                         completionBlock:(MendeleyArrayCompletionBlock)completionBlock
+{
+    MendeleyTask *task = [MendeleyTask new];
+    if (self.isAuthenticated)
+    {
+        [MendeleyOAuthTokenHelper refreshTokenWithRefreshBlock: ^(BOOL success, NSError *error) {
+            if (success)
+            {
+                [self.locationAPI locationsWithLinkedURL:linkURL
+                                        developmentToken:developmentToken
+                                                    task:task
+                                         completionBlock:completionBlock];
+            }
+            else
+            {
+                completionBlock(nil, nil, error);
+            }
+        }];
+    }
+    else
+    {
+        NSError *unauthorisedError = [NSError errorWithCode:kMendeleyUnauthorizedErrorCode];
+        completionBlock(nil, nil, unauthorisedError);
+    }
+    return task;
+}
+
+/**
+ obtains a list of locations for the first page.
+ @param parameters the parameter set to be used in the request
+ @param task
+ @param completionBlock
+ */
+#warning this is a v2 API BETA method - DO NOT USE IN PRODUCTION
+- (MendeleyTask *)locationsWithQueryParameters:(MendeleyDocumentParameters *)queryParameters
+                              developmentToken:(NSString *)developmentToken
+                               completionBlock:(MendeleyArrayCompletionBlock)completionBlock
+{
+    MendeleyTask *task = [MendeleyTask new];
+    if (self.isAuthenticated)
+    {
+        [MendeleyOAuthTokenHelper refreshTokenWithRefreshBlock: ^(BOOL success, NSError *error) {
+            if (success)
+            {
+                [self.locationAPI locationsWithQueryParameters:queryParameters
+                                              developmentToken:developmentToken
+                                                          task:task
+                                               completionBlock:completionBlock];
+            }
+            else
+            {
+                completionBlock(nil, nil, error);
+            }
+        }];
+    }
+    else
+    {
+        NSError *unauthorisedError = [NSError errorWithCode:kMendeleyUnauthorizedErrorCode];
+        completionBlock(nil, nil, unauthorisedError);
+    }
+    return task;
+    
 }
 
 @end

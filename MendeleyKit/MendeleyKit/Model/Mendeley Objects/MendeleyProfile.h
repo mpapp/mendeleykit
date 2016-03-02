@@ -20,8 +20,9 @@
 
 #import "MendeleyObject.h"
 #import "MendeleyGroup.h"
+#import "MendeleyLocation.h"
 
-
+/* v1 API
 @interface MendeleyLocation : MendeleySecureObject
 
 @property (nonatomic, strong) NSString *name;
@@ -29,7 +30,7 @@
 @property (nonatomic, strong) NSNumber *longitude;
 
 @end
-
+*/
 
 @interface MendeleyEmployment : MendeleySecureObject
 

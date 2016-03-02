@@ -85,13 +85,13 @@
 		645F7A821C5262C5006D7B24 /* ColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645F7A811C5262C5006D7B24 /* ColorExtensionTests.swift */; };
 		645F7A871C526552006D7B24 /* ColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645F7A811C5262C5006D7B24 /* ColorExtensionTests.swift */; };
 		645F7A881C5265B8006D7B24 /* Color+Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645F7A7C1C52603D006D7B24 /* Color+Addons.swift */; };
-		724DD3021C8457D800E636BC /* MendeleyLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3001C8457D800E636BC /* MendeleyLocation.h */; };
-		724DD3031C8457D800E636BC /* MendeleyLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3001C8457D800E636BC /* MendeleyLocation.h */; };
+		724DD3021C8457D800E636BC /* MendeleyLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3001C8457D800E636BC /* MendeleyLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724DD3031C8457D800E636BC /* MendeleyLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3001C8457D800E636BC /* MendeleyLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		724DD3041C8457D800E636BC /* MendeleyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724DD3011C8457D800E636BC /* MendeleyLocation.m */; };
 		724DD3051C8457D800E636BC /* MendeleyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724DD3011C8457D800E636BC /* MendeleyLocation.m */; };
 		724DD3061C8457D800E636BC /* MendeleyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 724DD3011C8457D800E636BC /* MendeleyLocation.m */; };
-		724DD3091C845A3700E636BC /* MendeleyLocationAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3071C845A3700E636BC /* MendeleyLocationAPI.h */; };
-		724DD30A1C845A3700E636BC /* MendeleyLocationAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3071C845A3700E636BC /* MendeleyLocationAPI.h */; };
+		724DD3091C845A3700E636BC /* MendeleyLocationAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3071C845A3700E636BC /* MendeleyLocationAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		724DD30A1C845A3700E636BC /* MendeleyLocationAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 724DD3071C845A3700E636BC /* MendeleyLocationAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		724DD30B1C845A3700E636BC /* MendeleyLocationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 724DD3081C845A3700E636BC /* MendeleyLocationAPI.m */; };
 		724DD30C1C845A3700E636BC /* MendeleyLocationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 724DD3081C845A3700E636BC /* MendeleyLocationAPI.m */; };
 		724DD30D1C845A3700E636BC /* MendeleyLocationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 724DD3081C845A3700E636BC /* MendeleyLocationAPI.m */; };

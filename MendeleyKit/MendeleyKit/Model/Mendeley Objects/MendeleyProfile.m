@@ -22,10 +22,10 @@
 
 @implementation MendeleyEducation
 @end
-
+/*
 @implementation MendeleyLocation
 @end
-
+*/
 @implementation MendeleyDiscipline
 @end
 

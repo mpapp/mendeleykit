@@ -6,7 +6,7 @@
 //  Copyright © 2016 Mendeley. All rights reserved.
 //
 
-#import <MendeleyKitOSX/MendeleyKitOSX.h>
+#import "MendeleyObjectAPI.h"
 
 @interface MendeleyLocationAPI : MendeleyObjectAPI
 /**
