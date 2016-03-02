@@ -155,7 +155,7 @@ typedef void (^ __nullable MendeleyStringArrayCompletionBlock)(NSArray * __nulla
 /***********************************************
  @name Request keys API v2
  ***********************************************/
-#define kMendeleyRESTRequestJSONLocationType                    @"application/vnd.mendeley-location.json"
+#define kMendeleyRESTRequestJSONLocationType                    @"application/vnd.mendeley-location.2+json"
 
 /***********************************************
    @name Request values
