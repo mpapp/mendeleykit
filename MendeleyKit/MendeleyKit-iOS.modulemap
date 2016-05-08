@@ -1,0 +1,6 @@
+framework module MendeleyKitiOS {
+    umbrella header "MendeleyKitiOS.h"
+
+    export *
+    module * { export * }
+}

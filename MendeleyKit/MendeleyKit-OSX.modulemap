@@ -1,0 +1,6 @@
+framework module MendeleyKitOSX {
+    umbrella header "MendeleyKitOSX.h"
+
+    export *
+    module * { export * }
+}

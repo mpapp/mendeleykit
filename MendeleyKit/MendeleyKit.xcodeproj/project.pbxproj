@@ -72,7 +72,6 @@
 		145C2E0E1A2CAB0E0005BFF6 /* MendeleyPerformanceMeterSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A1356519DAE0A20069DB7A /* MendeleyPerformanceMeterSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		145C2E0F1A2CAB0E0005BFF6 /* MendeleyTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A1356719DAE0A20069DB7A /* MendeleyTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		145C2E101A2CAB0E0005BFF6 /* MendeleyBlockExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A1354A19DAE0610069DB7A /* MendeleyBlockExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		145C2E111A2CAB0E0005BFF6 /* MendeleyLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C42111AE1A233FE1006C044C /* MendeleyLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		145C2E121A2CAB0E0005BFF6 /* MendeleyGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A1357019DAE6A50069DB7A /* MendeleyGlobals.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		154DD1C28358A9380C22F0E1 /* libPods-MendeleyKitiOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDBA7378F567E89727A6D0F /* libPods-MendeleyKitiOSTests.a */; };
 		373AA4EB1B4698F800F8B0C4 /* followRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 373AA4EA1B4698F800F8B0C4 /* followRequest.json */; };
@@ -563,6 +562,7 @@
 		373AA4EA1B4698F800F8B0C4 /* followRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = followRequest.json; sourceTree = "<group>"; };
 		373AA4EC1B46AAB500F8B0C4 /* followAcceptance.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = followAcceptance.json; sourceTree = "<group>"; };
 		5EDBA7378F567E89727A6D0F /* libPods-MendeleyKitiOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MendeleyKitiOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F926D691CDCCF5E00CF7D04 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ../../module.modulemap; sourceTree = "<group>"; };
 		645F7A7B1C52603D006D7B24 /* MendeleyKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MendeleyKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		645F7A7C1C52603D006D7B24 /* Color+Addons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Addons.swift"; sourceTree = "<group>"; };
 		645F7A801C5262C4006D7B24 /* MendeleyKitTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MendeleyKitTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -1376,6 +1376,7 @@
 		C4CD514119DAD9E400C8EB8D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5F926D691CDCCF5E00CF7D04 /* module.modulemap */,
 				645F7A7B1C52603D006D7B24 /* MendeleyKit-Bridging-Header.h */,
 				C4A1357019DAE6A50069DB7A /* MendeleyGlobals.h */,
 				C4CD514219DAD9E400C8EB8D /* MendeleyKit-Prefix.pch */,
@@ -1520,7 +1521,6 @@
 				145C2E0E1A2CAB0E0005BFF6 /* MendeleyPerformanceMeterSession.h in Headers */,
 				145C2E0F1A2CAB0E0005BFF6 /* MendeleyTimer.h in Headers */,
 				145C2E101A2CAB0E0005BFF6 /* MendeleyBlockExecutor.h in Headers */,
-				145C2E111A2CAB0E0005BFF6 /* MendeleyLoginViewController.h in Headers */,
 				145C2E121A2CAB0E0005BFF6 /* MendeleyGlobals.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2256,6 +2256,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "MendeleyKit-OSX.modulemap";
+				MODULE_NAME = com.mendeley.MendeleyKit;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2285,6 +2287,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "MendeleyKit-OSX.modulemap";
+				MODULE_NAME = com.mendeley.MendeleyKit;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				New_Setting = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2323,6 +2327,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "MendeleyKit-iOS.modulemap";
+				MODULE_NAME = com.mendeley.MendeleyKit;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
@@ -2360,6 +2366,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "MendeleyKit-iOS.modulemap";
+				MODULE_NAME = com.mendeley.MendeleyKit;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
