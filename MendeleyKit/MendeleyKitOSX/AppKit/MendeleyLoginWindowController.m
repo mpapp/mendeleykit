@@ -26,7 +26,7 @@
 #import "MendeleyDefaultOAuthProvider.h"
 #import "NSError+MendeleyError.h"
 
-@interface MendeleyLoginWindowController ()
+@interface MendeleyLoginWindowController () <WebPolicyDelegate, WebFrameLoadDelegate>
 @property (nonatomic, strong) WebView *webView;
 @property (nonatomic, strong) NSURL *oauthServer;
 @property (nonatomic, strong) NSString *clientID;

@@ -5,17 +5,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "88451CE373A8483FBC0FDD215687D819CC4E9788" : 0,
+    "0B5936C9CBA1409844D74AA6E444E0F825C39CB9" : 9223372036854775807,
     "C77AE71588039016E97DC156D54EF67EE66FA72B" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "474D5E1D-0C1E-46F5-9232-E79D281DE8C7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "88451CE373A8483FBC0FDD215687D819CC4E9788" : "MendeleyKit",
+    "88451CE373A8483FBC0FDD215687D819CC4E9788" : "mendeleykit\/",
+    "0B5936C9CBA1409844D74AA6E444E0F825C39CB9" : "..\/..",
     "C77AE71588039016E97DC156D54EF67EE66FA72B" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "MendeleyKit",
-  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MendeleyKit\/MendeleyKit.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:mpapp\/Manuscripts.app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B5936C9CBA1409844D74AA6E444E0F825C39CB9"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/peter.schmidt@git.mendeley.com\/scm\/mob\/mendeleysdk-objectivec.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

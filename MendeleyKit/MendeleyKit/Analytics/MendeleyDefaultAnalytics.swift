@@ -65,7 +65,7 @@ public class MendeleyDefaultAnalytics: NSObject, MendeleyAnalytics
         event.origin[kMendeleyAnalyticsJSONOriginVersion] = versionString
         event.origin[kMendeleyAnalyticsJSONOriginIdentity] = identityString
         event.profile_uuid = profileUUID
-        cacheManager.addMendeleyAnalyticsEvent(event)
+        cacheManager.addMendeleyAnalyticsEvent(event: event)
     }
     
     
@@ -81,13 +81,13 @@ public class MendeleyDefaultAnalytics: NSObject, MendeleyAnalytics
             event.origin[kMendeleyAnalyticsJSONOriginIdentity] = identityString
             event.profile_uuid = profileUUID
         }
-        cacheManager.addMendeleyAnalyticsEvents(events)
+        cacheManager.addMendeleyAnalyticsEvents(events: events)
     }
     
     
     public func dispatchMendeleyAnalyticsEvents(completionHandler: MendeleyCompletionBlock?)
     {
-        cacheManager.sendAndClearAnalyticsEvents(completionHandler)
+        cacheManager.sendAndClearAnalyticsEvents(completionHandler: completionHandler)
     }
 
 }

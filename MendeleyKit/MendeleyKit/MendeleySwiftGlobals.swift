@@ -20,5 +20,5 @@
 
 import Foundation
 
-public typealias MendeleySuccessClosure = (success: Bool, error: NSError?) -> Void
-public typealias MendeleyOAuthClosure = (credentials: MendeleyOAuthCredentials?, error: NSError?) -> Void
+public typealias MendeleySuccessClosure = (Bool, NSError?) -> Void
+public typealias MendeleyOAuthClosure = (MendeleyOAuthCredentials?, NSError?) -> Void
